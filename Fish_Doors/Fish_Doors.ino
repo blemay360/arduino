@@ -28,18 +28,6 @@ void setup() {
 void loop() {
   if (Serial.available() > 0) {
     int signalIn = Serial.read();
-  /*  if (signalIn == 49) {
-      openDoor(1);
-    }
-    else if (signalIn == 50) {
-      openDoor(2);
-    }
-    else if (signalIn == 51) {
-      closeDoor(1);
-    }
-    else if (signalIn == 52) {
-      closeDoor(2);
-    }*/
     if (signalIn == 49) {
       toggleDoor(1, door1pos);
     }
